@@ -243,6 +243,25 @@ footer p {
     footer p {
         font-size: 0.9em;
     }
+    /* Responsividade do vídeo */
+.video {
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 (altura / largura * 100) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 }
 
     </style>
