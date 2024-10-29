@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Imóvel de luxo à venda. Veja fotos, vídeo tour e mais detalhes.">
+    <meta name="keywords" content="imóvel de luxo, casa à venda, apartamento, compra de imóvel, Florianópolis, vista mar, Beira mar, Balneário Estreito, Estreito">
+    <meta name="author" content="Felipe Kruhs - Corretor de Imóveis - CRECI 54427-F">
+    <title>Cobertura no Balneário Estreito com vista ampla para Beira Mar Continental</title>
+
+    <style>
+       /* Global Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #022b60;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Carrossel de Fotos */
+.carousel {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto; /* Permite a imagem se ajustar melhor */
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 2.5em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Detalhes do Imóvel */
+.details {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.details h2 {
+    font-size: 2.2em;
+    color: #022b60;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details ul li ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.details ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.details ul li:before {
+    content: "✔";
+    color: #ff9202;
+    margin-right: 10px;
+}
+
+/* Video Tour */
+.video {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+    max-width: 560px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cta a {
+    background-color: #ff9202;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta a:hover {
+    background-color: #d77300;
+}
+
+/* Footer */
+footer {
+    background-color: #022b60;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsividade */
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .carousel img {
+        height: auto;
+    }
+
+    .details h2 {
+        font-size: 1.8em;
+    }
+
+    .details ul li {
+        font-size: 1em;
+    }
+
+    .cta a {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    .cta {
+        margin: 30px 0;
+    }
+
+    .video iframe {
+        height: 220px;
+        max-width: 100%;
+    }
+}
+
+/* Ajustes para smartphones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    .carousel-control {
+        font-size: 2em;
+        padding: 5px;
+    }
+
+    .details h2 {
+        font-size: 1.5em;
+    }
+
+    .details ul li {
+        font-size: 0.9em;
+    }
+
+    .cta a {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+    /* Responsividade do vídeo */
+.video {
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 (altura / largura * 100) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Apartamentos 3 quartos, 2 garagens com Vista incrível</h1>
+        <p>Localizado no Itaguaçu - Florianópolis com vista ampla para o Mar</p>
+    </header>
+
+    <!-- Seção Hero -->
+     <!--
+    <section class="hero">
+        <h2>Seu Novo Lar Espera por Você</h2>
+    </section>
+-->
+    <div class="container">
+        <!-- Carrossel de fotos -->
+        <div class="carousel">
+            <span class="carousel-control prev" onclick="prevImage()">&#10094;</span>
+            <img id="carouselImage" src="imagens/imagem_01.jpg" alt="Imagem do Imóvel">
+            <span class="carousel-control next" onclick="nextImage()">&#10095;</span>
+        </div>
+
+        <!-- Detalhes do Imóvel -->
+        <div class="details">
+            <h2>Sobre o Apartamento</h2>
+            <ul>
+                <li>-	Área privativa de 93m2²</li>
+                <li>1º andar</li>
+                <li>3 quartos:
+                    <ul>
+                        <li>1 suíte</li>
+                        <li>2 quartos</li>
+                    </ul>
+                </li>
+                <li>3 quartos:
+                    <ul>
+                        <li>1 lavabo com exaustor </li>
+                        <li>1 na suíte com ventilação natural</li>
+                        <li>1 na área privativa acessível pelos 2 quartos com ventilação natural</li>
+                    </ul>
+                </li>
+                <li>Churrasqueira na sacada</li>
+                <li>Cozinha</li>
+                <li>Área de serviço com ventilação natural</li>
+                <li>Área técnica</li>
+                <li>Sala de estar/jantar</li>
+                <li>2 garagens de 12m² cada</li>
+                <li>Espera para ar-condicionado</li>
+                <li>Posição solar:
+                    <ul>
+                        <li>Sul: sacada/suíte</li>
+                        <li>Oeste: quartos/banheiros</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Sobre o Condomínio</h2>
+            <ul>
+<li>Portaria 24 horas</li>
+<li>Salão de festas</li>
+<li>Área gourmet</li>
+<li>Jardim externo</li>
+<li>Piscina</li>
+<li>Academia</li>
+<li>Coworking</li>
+            </ul>
+
+            <h2>Proximidades</h2>
+
+<h2>Proximidades</h2>
+<ul>
+<li>Mercearia (Pauli) - 15m</li>
+<li>Restaurante (Tassei) – 70m</li>
+<li>Restaurante (Rancho Açoriano) – 290m</li>
+<li>Restaurante (Recanto das Pedras) – 300m</li>
+<li>Via Gastronômica (Coqueiros) – 300m</li>
+<li>Praia (de Itaguaju) – 300m</li>
+<li>Academia (Engenharia do Corpo) - 350m</li>
+<li>Restaurante (Los troncos Parrilla Uruguaya) – 400m</li>
+<li>Associação (AABB) – 600m</li>
+<li>Restaurante (Cowboy Hamburgueria) - 630m</li>
+<li>Confeitaria (Akitutes) - 700m</li>
+<li>Restaurante (Lindacap) – 870m</li>
+<li>Farmácia (Drogaraia) – 930m</li>
+<li>Farmácia (Pague Menos) – 930m</li>
+<li>Supermercado (Hippo) - 990m</li>
+<li>Supemercado (Bistek) – 1,1km</li>
+<li>Supermercado (Angeloni) – 1,6km</li>
+<li>Farmácia (Drogaria Catarinense) – 2,0km</li>
+<li>Farmácia (Panvel) – 2,0km</li>
+<li>Posto (Shell) – 2,0km</li>
+<li>Supermercado (Imperatriz) – 2,3km</li>
+<li>Parque (de Coqueiros) – 2,6km</li>
+<li>Ponte (Pedro Ivo Campos) – 3,2km</li>
+<li>Beira Mar Continental (Parque) – 3,8km</li>
+
+            </ul>
+        </div>
+
+        <!-- Vídeo Tour -->
+        <div class="video">
+            <h2>Vídeo Tour do Imóvel</h2>
+            <iframe width="560" height="315" src="https://youtu.be/hY1e-ZL6FTI" title="Video Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            <a href="https://wa.me/5548998116959">Saiba Mais e Agende uma Visita</a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Felipe Kruhs - Corretor de Imóveis - CRECI 54427-F - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let images = ["imagens/imagem_01.jpg", "imagens/imagem_02.jpg", "imagens/imagem_03.jpg",
+                      "imagens/imagem_04.jpg", "imagens/imagem_05.jpg", "imagens/imagem_06.jpg",
+                      "imagens/imagem_07.jpg", "imagens/imagem_08.jpg", "imagens/imagem_09.jpg",
+                      "imagens/imagem_10.jpg", "imagens/imagem_11.jpg", "imagens/imagem_12.jpg",
+                      "imagens/imagem_13.jpg", "imagens/imagem_14.jpg", "imagens/imagem_15.jpg",
+                      "imagens/imagem_16.jpg", "imagens/imagem_17.jpg", "imagens/imagem_18.jpg",
+                      "imagens/imagem_19.jpg"
+        ]; // Adicione o caminho para suas imagens aqui
+        let currentIndex = 0;
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById("carouselImage").src = images[currentIndex];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            document.getElementById("carouselImage").src = images[currentIndex];
+        }
+    </script>
+</body>
+
+</html>
